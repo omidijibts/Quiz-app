@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="timeCount">
+        0:00
+    </div>
+
+    
+    <div id="next_previous">
+            </div>
+
+
+    <div id="question">
+        <button name="nxt"><a href="three.html">></a></button>
+        <button name="prv"><a href="one.html"><</a></button>
+
+        <blockquote>The popular nigerian footballer playing for Arsenal and England national team is</blockquote>
+    </div>
+
+
+    <div id="options">    
+        <div class="flex-container">
+            <div class="box"><a href="two.html">Willian</a></div>
+            <div class="box"><a href="two.html">Ains Maitland Niles</a></div>
+            <div class="box"><a href="two.html">Saka</a></div>
+            <div class="box"><a href="two.html">Xhaka</a></div>
+        </div>
+    </div>
+
+
+    <script>
+    let a = setInterval(function(){document.getElementById("timeCount").innerHTML=new Date().toLocaleTimeString();},1000);
+
+    </script>
+</body>
+</html>

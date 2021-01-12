@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz app</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   <canvas id="myCanvas" width="500" height="50" style="border: 1px solid black;width: 100%;height: 100%;">Your browser does not support canvas element.</canvas> 
+
+
+
+    <script>
+    let cvs = document.getElementById("myCanvas").getContext("2d");
+    cvs.fillStyle = "green";
+    cvs.fillRect(0,0,500,500);
+    cvs.font = "30px Arial";
+    cvs.fillStyle = "red";
+    cvs.fillText("Hello World",10,50);
+    </script>
+</body>
+</html>

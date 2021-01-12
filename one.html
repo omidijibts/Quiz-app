@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="timeCount">
+        0:00
+    </div>
+
+    
+    <div id="next_previous">
+        
+    </div>
+
+
+    <div id="question">
+        <button name="nxt"><a href="two.html">></a></button>
+        
+        <blockquote>The popular nigerian song 'Blow Your Trumpet' is written by</blockquote>
+    </div>
+
+
+    <div id="options">    
+        <div class="flex-container">
+            <div class="box"><a href="two.html">Wiz Kid</a></div>
+            <div class="box"><a href="two.html">Davido</a></div>
+            <div class="box"><a href="two.html">Olamide</a></div>
+            <div class="box"><a href="two.html">Burna Boy</a></div>
+        </div>
+    </div>
+
+    <div id="scoredisplay"></div>
+
+
+    <script>
+    let a = setInterval(function(){document.getElementById("timeCount").innerHTML=new Date().toLocaleTimeString();},1000);
+
+    
+    </script>
+</body>
+</html>

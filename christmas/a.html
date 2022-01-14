@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="bringIn()">Click</button>
+    <div id="demo"></div>
+    
+    <form>
+        name:<input><br>
+        password:<input type="password"><br>
+        <button type="submit">submit</button>
+    </form>
+    
+    <button onclick='getText("c.txt")'>Click</button>
+    <div id="demo2"></div>
+    
+    <script>
+        function bringIn(){
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET","b.html",true);
+        xhttp.send();
+        xhttp.onreadystatechange=function(){
+            document.getElementById("demo").innerHTML=this.responseText;
+        }
+        }
+        
+    </script>
+    
+    <script>
+        
+        async function getText(file){
+            let x= await fetch(file);
+            let y= await x.text();
+            document.getElementById("demo2").innerHTML=y;
+        }
+    </script>
+</body>
+</html>

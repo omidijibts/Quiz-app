@@ -1,0 +1,1 @@
+This is a text file used to test how FETCH API can be used to fetch file instead of using XMLHttp request.

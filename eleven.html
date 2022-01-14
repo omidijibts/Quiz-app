@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <h2>Final Score:</h2>
+    <p id="demo"></p>
+    
+    <script>
+    function final_score(x){
+        let text = 0;
+        let i;
+        for(i=0;i<x.length;i++){
+            text += x[i];
+        }
+        document.getElementById("demo").innerHTML=text;
+    }
+    </script>
+</body>
+</html>
